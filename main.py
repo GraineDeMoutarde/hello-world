@@ -45,6 +45,8 @@ def ajouter():
 	while choixinterval == 0:
 		print("Autres paramètres (debut, fin)")
 		params = input("").split(", ")
+		if len(params)==1:
+			break
 		for p in params:
 			key, value = p.split(": ")
 			newtask[key] = value
