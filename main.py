@@ -76,4 +76,21 @@ def retirer():
 daily = parseDaily()
 
 
-ajouter()
+width = 35
+
+
+def display_roll():
+	for k in range(8,15):
+		display_content(k)
+		print(" " * width)
+		print(" " * width)
+		print(" " * width)
+
+
+def display_content(k):
+	time  = str(k) + "h"
+	time2 = str(k+7) + "h"
+	print(time + " titre" + " " * (width -(len(time + " titre"))) 
+		+ time2 + " titre2" + " " * (width -(len(time2 + " titre2"))))
+
+display_roll()
